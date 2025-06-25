@@ -38,7 +38,9 @@ endorsements = {
     "img1": "https://i.imgur.com/yds3ZeZ.jpeg",
     "img2": "https://i.imgur.com/J70h2sZ.jpeg",
     "img3": "https://i.imgur.com/F1gVb1E.jpeg",
-    "img4": "https://i.imgur.com/ObAo2g7.jpeg"
+    "img4": "https://i.imgur.com/ObAo2g7.jpeg",
+    "img5": "https://i.imgur.com/99Ux7Le.jpeg",
+    "img6": "https://i.imgur.com/QR7sVIw.jpeg"
 }
 
 # ---------------------- CONTENIDO ---------------------
@@ -110,7 +112,9 @@ imagenes = [
     {"url": endorsements["img1"], "caption": "AFICHE PROPIO DEL CORTO LA SILLA ANTE EL BANCO"},
     {"url": endorsements["img2"], "caption": "TRABAJO EN REDES Y ORIENTACIÓN COMO GUÍA PUCP"},
     {"url": endorsements["img3"], "caption": "FOTOGRAFÍA ESPONTÁNEA DE MATUCANA"},
-    {"url": endorsements["img4"], "caption": "FOTOGRAFIANDO PASIONES: EL McLAREN DE AYRTON SENNA"}
+    {"url": endorsements["img4"], "caption": "FOTOGRAFIANDO PASIONES: EL McLAREN DE AYRTON SENNA"},
+    {"url": endorsements["img5"], "caption": "RIELES ESTRECHOS: CRUCE DEL TREN EN MATUCANA"},
+    {"url": endorsements["img6"], "caption": "LA LUNA DESDE BUENOS AIRES"}
 ]
 
 # Inicializar índice en session_state

@@ -106,7 +106,7 @@ st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("## 📸 Galería de experiencias")
 
 imagenes = [
-    {"url": endorsements["img1"], "caption": "Afiche para promoción del corto 'La Silla ante el Banco'"},
+    {"url": endorsements["img1"], "caption": "Afiche propio del corto La Silla ante el Banco"},
     {"url": endorsements["img2"], "caption": "Voluntariado y eventos"},
     {"url": endorsements["img3"], "caption": "Fotografía urbana"}
 ]

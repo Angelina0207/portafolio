@@ -102,18 +102,41 @@ st.write("- Certificado del IB en Artes Visuales (2022)")
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
-# Galería
-# Galería como carrusel
+# Galería tipo carrusel con flechas y bucle
 st.markdown("## 📸 Galería de experiencias")
 
 imagenes = [
-    endorsements["img1"],
-    endorsements["img2"],
-    endorsements["img3"]
+    {"url": endorsements["img1"], "caption": "Festival de Cine PUCP"},
+    {"url": endorsements["img2"], "caption": "Voluntariado y eventos"},
+    {"url": endorsements["img3"], "caption": "Fotografía urbana"}
 ]
 
-index = st.slider("Desliza para ver más fotos:", 0, len(imagenes) - 1, 0)
-st.image(imagenes[index], use_container_width=True, caption=f"Imagen {index + 1} de {len(imagenes)}")
+# Inicializar índice en session_state
+if "img_index" not in st.session_state:
+    st.session_state.img_index = 0
+
+# Botones de navegación
+col1, col2, col3 = st.columns([1, 6, 1])
+with col1:
+    if st.button("⬅️"):
+        st.session_state.img_index = (st.session_state.img_index - 1) % len(imagenes)
+with col3:
+    if st.button("➡️"):
+        st.session_state.img_index = (st.session_state.img_index + 1) % len(imagenes)
+
+# Mostrar imagen y leyenda
+img_actual = imagenes[st.session_state.img_index]
+st.markdown(
+    f"""
+    <div style='text-align: center;'>
+        <img src="{img_actual['url']}" style="max-height:400px; width:auto; border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+        <p style='color:#5f2c9c; margin-top:10px;'>{img_actual['caption']}</p>
+        <p style='color:gray; font-size:14px;'>Imagen {st.session_state.img_index + 1} de {len(imagenes)}</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)

@@ -56,13 +56,24 @@ with col2:
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
 # Sobre mí
-st.markdown("## Sobre mí")
-st.markdown(info["About"])
+st.markdown("""
+<div style="background-color:#e6d6ff; padding:20px; border-radius:10px">
+    <h3 style='color:#5f2c9c;'>💡 Sobre mí</h3>
+    <p>¡Hola! Soy Paula, estudiante de quinto ciclo de la carrera de Publicidad en la PUCP. 
+    Me encantan las artes y poder orientar aspectos empresariales del Marketing hacia lo creativo, 
+    participando en voluntariados orientados al cine o trabajos de atención al cliente donde aplicar estrategias 
+    para la transmisión de mensajes inspiradores.</p>
 
-st.markdown("## Sobre Paula")
-st.write("""Paula es una estudiante apasionada de Publicidad en la PUCP, con experiencia en la organización de festivales de cine, atención al cliente y ponencias institucionales representando a su universidad frente a colegios y familias de todo el Perú. 
-Le encanta capturar el mundo a través de su lente, y combina su sensibilidad visual con habilidades estratégicas de comunicación. 
-Curiosa, comprometida y creativa, busca generar conexiones significativas entre las personas y las marcas a través de ideas que inspiran.""")
+    <p>Vinculado a la transmisión, conoce un poco de mis experiencias fotográficas en Instagram: 
+    <a href='https://www.instagram.com/paula_jchirinos?igsh=MXZvbXRiMzMwcDZ1MA&utm_source=qr' target='_blank'>
+    @paula_jchirinos</a></p>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("##")
+st.write("""Soy una estudiante apasionada de Publicidad en la PUCP, con experiencia en el apoyo a la organización de festivales de cine, atención al cliente y ponencias institucionales representando a mi universidad frente a colegios y familias de todo el Perú. 
+Me encanta capturar el mundo a través de mi lente, y busco combinar aquella sensibilidad visual con habilidades estratégicas de comunicación. 
+Curiosa, comprometida y creativa, son algunos de los adjetivos que se me adjudican, en mi intento de generar conexiones significativas entre las personas y las marcas a través de ideas que inspiran.""")
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 

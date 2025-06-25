@@ -20,7 +20,7 @@ info = {
     "Pronoun": "ella",
     "Name": "Paula",
     "Full_Name": "PAULA JIMENA CHIRINOS MOLINA",
-    "Intro": "Publicista en formación, apasionada por el cine y la fotografía",
+    "Intro": "Publicista en formación. Apasionada por el cine y la fotografía",
     "About": """¡Hola! Soy Paula, estudiante de quinto ciclo de la carrera de Publicidad en la PUCP. 
 Me encantan las artes y poder orientar aspectos empresariales del Marketing hacia lo creativo, 
 participando en voluntariados orientados al cine o trabajos de atención al cliente donde aplicar estrategias 

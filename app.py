@@ -14,7 +14,7 @@ para la transmisión de mensajes inspiradores.
 Vinculado a la transmisión, conoce un poco de mis experiencias fotográficas en Instagram: 
 [paula_jchirinos](https://www.instagram.com/paula_jchirinos?igsh=MXZvbXRiMzMwcDZ1MA&utm_source=qr)""",
     "City": "Lima, Perú",
-    "Photo": "https://i.imgur.com/z0a9l8r.jpeg",  # Usa un link directo (evita Google Drive)
+    "Photo": "https://i.imgur.com/27mdmhl.jpeg",  # Usa un link directo (evita Google Drive)
     "Email": "a20230941@pucp.edu.pe",
     "Phone": "999003581"
 }

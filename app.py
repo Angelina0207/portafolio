@@ -37,7 +37,8 @@ Vinculado a la transmisión, conoce un poco de mis experiencias fotográficas en
 endorsements = {
     "img1": "https://i.imgur.com/yds3ZeZ.jpeg",
     "img2": "https://i.imgur.com/J70h2sZ.jpeg",
-    "img3": "https://i.imgur.com/F1gVb1E.jpeg"
+    "img3": "https://i.imgur.com/F1gVb1E.jpeg",
+    "img4": "https://i.imgur.com/ObAo2g7.jpeg"
 }
 
 # ---------------------- CONTENIDO ---------------------
@@ -106,9 +107,10 @@ st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("## 📸 Galería de experiencias")
 
 imagenes = [
-    {"url": endorsements["img1"], "caption": "Afiche propio del corto La Silla ante el Banco"},
-    {"url": endorsements["img2"], "caption": "Trabajo en redes y orientación como Guía PUCP"},
-    {"url": endorsements["img3"], "caption": "Fotografía espontánea"}
+    {"url": endorsements["img1"], "caption": "AFICHE PROPIO DEL CORTO LA SILLA ANTE EL BANCO"},
+    {"url": endorsements["img2"], "caption": "TRABAJO EN REDES Y ORIENTACIÓN COMO GUÍA PUCP"},
+    {"url": endorsements["img3"], "caption": "FOTOGRAFÍA ESPONTÁNEA DE MATUCANA"},
+    {"url": endosements["img4"], "caption": "FOTOGRAFIANDO PASIONES: EL McLAREN DE AYRTON SENNA"}
 ]
 
 # Inicializar índice en session_state

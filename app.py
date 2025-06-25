@@ -103,11 +103,18 @@ st.write("- Certificado del IB en Artes Visuales (2022)")
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
 # Galería
-st.markdown("## Galería de experiencias")
-col1, col2, col3 = st.columns(3)
-col1.image(endorsements["img1"], use_container_width=True)
-col2.image(endorsements["img2"], use_container_width=True)
-col3.image(endorsements["img3"], use_container_width=True)
+# Galería como carrusel
+st.markdown("## 📸 Galería de experiencias")
+
+imagenes = [
+    endorsements["img1"],
+    endorsements["img2"],
+    endorsements["img3"]
+]
+
+index = st.slider("Desliza para ver más fotos:", 0, len(imagenes) - 1, 0)
+st.image(imagenes[index], use_container_width=True, caption=f"Imagen {index + 1} de {len(imagenes)}")
+
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 

@@ -101,42 +101,20 @@ st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 # ---------------------- BUSCADOR INTERACTIVO ---------------------
 
 st.markdown("## 🔍 Explora más de Paula")
-seccion = st.selectbox(
-    "Selecciona una sección para conocer más:",
-    [
-        "Seleccionar...",
-        "Fortalezas y ventajas",
-        "Desafíos",
-        "Intereses y pasatiempos",
-        "Portafolio",
-        "Disponibilidad",
-        "Referencias"
-    ]
-)
+secciones = {
+    "Fortalezas y ventajas": "Empática, observadora y versátil, Paula se adapta con facilidad a contextos dinámicos. Su curiosidad constante y dedicación le permiten aportar una mirada fresca y comprometida a los proyectos.",
+    "Desafíos": "Su nivel de detalle puede ralentizar algunos procesos, pero garantiza resultados cuidados y coherentes con los objetivos del proyecto.",
+    "Intereses y pasatiempos": "Apasionada por la fotografía, Paula disfruta documentar escenas cotidianas, explorar rincones urbanos, ver cine independiente y compartir conversaciones largas con café de por medio. También le interesa contar historias visuales en redes sociales.",
+    "Portafolio": "Actualmente se encuentra desarrollando un portafolio digital que reúna sus trabajos en fotografía, producción de eventos y conceptos creativos. Su objetivo es mostrar su enfoque multidisciplinario y su estilo personal.",
+    "Disponibilidad": "Abierta a prácticas, proyectos freelance o roles de asistencia en publicidad, eventos y creación de contenido.",
+    "Referencias": "Disponibles a solicitud."
+}
 
-if seccion == "Fortalezas y ventajas":
-    st.markdown("### Fortalezas y Ventajas")
-    st.write("Empática, observadora y versátil, Paula se adapta con facilidad a contextos dinámicos. Su curiosidad constante y dedicación le permiten aportar una mirada fresca y comprometida a los proyectos.")
+opcion = st.selectbox("Selecciona una sección:", list(secciones.keys()))
 
-elif seccion == "Desafíos":
-    st.markdown("### Desafíos")
-    st.write("Su nivel de detalle puede ralentizar algunos procesos, pero garantiza resultados cuidados y coherentes con los objetivos del proyecto.")
-
-elif seccion == "Intereses y pasatiempos":
-    st.markdown("### Intereses y Pasatiempos")
-    st.write("Apasionada por la fotografía, Paula disfruta documentar escenas cotidianas, explorar rincones urbanos, ver cine independiente y compartir conversaciones largas con café de por medio. También le interesa contar historias visuales en redes sociales.")
-
-elif seccion == "Portafolio":
-    st.markdown("### Portafolio")
-    st.write("Actualmente se encuentra desarrollando un portafolio digital que reúna sus trabajos en fotografía, producción de eventos y conceptos creativos. Su objetivo es mostrar su enfoque multidisciplinario y su estilo personal.")
-
-elif seccion == "Disponibilidad":
-    st.markdown("### Disponibilidad")
-    st.write("Abierta a prácticas, proyectos freelance o roles de asistencia en publicidad, eventos y creación de contenido.")
-
-elif seccion == "Referencias":
-    st.markdown("### Referencias")
-    st.write("Disponibles a solicitud.")
+if opcion:
+    st.markdown(f"### {opcion}")
+    st.write(secciones[opcion])
 
 # Footer
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)

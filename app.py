@@ -47,11 +47,15 @@ col1, col2 = st.columns([1, 2])
 with col1:
     st.image(info["Photo"], width=250)
 with col2:
-    st.title(info["Full_Name"])
-    st.subheader(info["Intro"])
-    st.markdown(f"📍 {info['City']}")
-    st.markdown(f"✉️ {info['Email']}")
-    st.markdown(f"📞 {info['Phone']}")
+    st.markdown(f"""
+    <div style="background-color:#f3e9ff; padding:20px; border-radius:10px;">
+        <h1 style="color:#5f2c9c; margin-bottom:0;">{info["Full_Name"]}</h1>
+        <h4 style="color:#7a45b2; margin-top:5px;">{info["Intro"]}</h4>
+        <p style="color:#4d3470;">📍 {info["City"]}<br>
+        ✉️ {info["Email"]}<br>
+        📞 {info["Phone"]}</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
@@ -63,7 +67,7 @@ st.markdown("""
     <h3 style='color:#5f2c9c;'>👩‍🎓</h3>
     Soy una estudiante apasionada de Publicidad en la PUCP, con experiencia en el apoyo a la organización de festivales de cine, atención al cliente y ponencias institucionales representando a mi universidad frente a colegios y familias de todo el Perú.<br><br>
     Me encanta capturar el mundo a través de mi lente, y busco combinar aquella sensibilidad visual con habilidades estratégicas de comunicación.<br><br>
-    Curiosa, comprometida y creativa, son algunos de los adjetivos que se me adjudican, en mi intento de generar conexiones significativas entre las personas y las marcas a través de ideas que inspiran.
+    Curiosa, comprometida y creativa, son algunos de los adjetivos que se me adjudican en mi intento de generar conexiones significativas entre las personas y las marcas a través de ideas que inspiran.
 </div>
 """, unsafe_allow_html=True)
 

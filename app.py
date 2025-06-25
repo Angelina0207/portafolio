@@ -19,7 +19,7 @@ st.markdown("""
 info = {
     "Pronoun": "ella",
     "Name": "Paula",
-    "Full_Name": "Paula Chirinos",
+    "Full_Name": "PAULA JIMENA CHIRINOS MOLINA",
     "Intro": "Publicista en formación, apasionada por el cine y la fotografía",
     "About": """¡Hola! Soy Paula, estudiante de quinto ciclo de la carrera de Publicidad en la PUCP. 
 Me encantan las artes y poder orientar aspectos empresariales del Marketing hacia lo creativo, 
@@ -48,14 +48,17 @@ with col1:
     st.image(info["Photo"], width=250)
 with col2:
     st.markdown(f"""
-    <div style="background-color:#f3e9ff; padding:20px; border-radius:10px;">
+    <div style="background-color:#f3e9ff; padding:25px; border-radius:15px; text-align:center;">
         <h1 style="color:#5f2c9c; margin-bottom:0;">{info["Full_Name"]}</h1>
-        <h4 style="color:#7a45b2; margin-top:5px;">{info["Intro"]}</h4>
-        <p style="color:#4d3470;">📍 {info["City"]}<br>
-        ✉️ {info["Email"]}<br>
-        📞 {info["Phone"]}</p>
+        <h4 style="color:#7a45b2; margin-top:10px;">{info["Intro"]}</h4>
+        <p style="color:#4d3470; font-size:16px; line-height:1.6;">
+            📍 {info["City"]}<br>
+            ✉️ {info["Email"]}<br>
+            📞 {info["Phone"]}
+        </p>
     </div>
     """, unsafe_allow_html=True)
+
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 

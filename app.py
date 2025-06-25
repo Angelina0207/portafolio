@@ -155,6 +155,6 @@ elif seccion == "Referencias":
 
 # Footer
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-st.markdown("Creado por Paula Chirinos usando Streamlit.")
+st.markdown("Creado por Paula Jimena Chirinos Molina usando Streamlit.")
 
 

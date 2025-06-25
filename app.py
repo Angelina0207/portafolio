@@ -60,7 +60,7 @@ st.markdown("## Sobre mí")
 st.write(info["About"])
 st.markdown("""
 <div style="background-color:#e6d6ff; padding:20px; border-radius:10px; color:#2e175d; font-size:16px;">
-    <h3 style='color:#5f2c9c;'>👩‍🎓 Sobre Paula</h3>
+    <h3 style='color:#5f2c9c;'>👩‍🎓</h3>
     Soy una estudiante apasionada de Publicidad en la PUCP, con experiencia en el apoyo a la organización de festivales de cine, atención al cliente y ponencias institucionales representando a mi universidad frente a colegios y familias de todo el Perú.<br><br>
     Me encanta capturar el mundo a través de mi lente, y busco combinar aquella sensibilidad visual con habilidades estratégicas de comunicación.<br><br>
     Curiosa, comprometida y creativa, son algunos de los adjetivos que se me adjudican, en mi intento de generar conexiones significativas entre las personas y las marcas a través de ideas que inspiran.

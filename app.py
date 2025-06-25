@@ -74,8 +74,12 @@ st.write("- **Apoyo administrativo - Oficina de Admisión PUCP** (2025–actuali
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
 # Objetivo profesional
-st.markdown("## Objetivo Profesional")
-st.write("Desarrollarse como estratega creativa en la industria publicitaria, integrando su pensamiento analítico, sensibilidad cultural y gusto por la narrativa visual para crear campañas relevantes y auténticas.")
+st.markdown("""
+<div style="background-color:#e6d6ff; padding:20px; border-radius:10px">
+    <h3 style='color:#5f2c9c;'>✨ Objetivo Profesional</h3>
+    <p>Desarrollarse como estratega creativa en la industria publicitaria, integrando su pensamiento analítico, sensibilidad cultural y gusto por la narrativa visual para crear campañas relevantes y auténticas.</p>
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 

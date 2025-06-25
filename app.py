@@ -1,14 +1,11 @@
 import streamlit as st
 
-# ---------------------- CONFIG GENERAL ---------------------
+# ---------------------- CONFIGURACIÓN ---------------------
 st.set_page_config(page_title="Portafolio Paula Chirinos", layout="wide")
 
-# Estilo personalizado con CSS para líneas y fondo
+# Estilo de separadores lilas
 st.markdown("""
     <style>
-        body {
-            background-color: #f8f1ff;
-        }
         .section-divider {
             border: none;
             height: 4px;
@@ -32,7 +29,7 @@ para la transmisión de mensajes inspiradores.
 Vinculado a la transmisión, conoce un poco de mis experiencias fotográficas en Instagram: 
 [paula_jchirinos](https://www.instagram.com/paula_jchirinos?igsh=MXZvbXRiMzMwcDZ1MA&utm_source=qr)""",
     "City": "Lima, Perú",
-    "Photo": "https://i.imgur.com/27mdmhl.jpeg",  # Reemplaza con tu foto directa si deseas
+    "Photo": "https://i.imgur.com/27mdmhl.jpeg",
     "Email": "a20230941@pucp.edu.pe",
     "Phone": "999003581"
 }
@@ -43,9 +40,9 @@ endorsements = {
     "img3": "https://i.imgur.com/F1gVb1E.jpeg"
 }
 
-# ---------------------- INICIO DE PORTAFOLIO ---------------------
+# ---------------------- CONTENIDO ---------------------
 
-# Header con imagen y presentación
+# Header
 col1, col2 = st.columns([1, 2])
 with col1:
     st.image(info["Photo"], width=250)
@@ -56,7 +53,6 @@ with col2:
     st.markdown(f"✉️ {info['Email']}")
     st.markdown(f"📞 {info['Phone']}")
 
-# Divider
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
 # Sobre mí
@@ -83,22 +79,13 @@ st.write("Desarrollarse como estratega creativa en la industria publicitaria, in
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
-# Habilidades
+# Habilidades y Certificaciones
 st.markdown("## Habilidades")
 st.write("Canva, Excel, Python, Inglés, Artes visuales")
 
-# Certificaciones
 st.markdown("## Certificaciones")
 st.write("- Cambridge B1 Preliminary")
 st.write("- Certificado del IB en Artes Visuales (2022)")
-
-st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
-
-# Logros
-st.markdown("## Logros")
-st.write("- Parte del equipo del Festival de Cine de Lima de la PUCP con más de 12,000 asistentes")
-st.write("- Reconocida por brindar una atención al cliente empática y eficiente")
-st.write("- Exposición de obras en el curso de Artes Visuales del Programa IB")
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
@@ -111,35 +98,48 @@ col3.image(endorsements["img3"], use_container_width=True)
 
 st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 
-# Fortalezas
-st.markdown("## Fortalezas y Ventajas")
-st.write("Empática, observadora y versátil, Paula se adapta con facilidad a contextos dinámicos. Su curiosidad constante y dedicación le permiten aportar una mirada fresca y comprometida a los proyectos.")
+# ---------------------- BUSCADOR INTERACTIVO ---------------------
 
-# Debilidades
-st.markdown("## Desafíos")
-st.write("Su nivel de detalle puede ralentizar algunos procesos, pero garantiza resultados cuidados y coherentes con los objetivos del proyecto.")
+st.markdown("## 🔍 Explora más de Paula")
+seccion = st.selectbox(
+    "Selecciona una sección para conocer más:",
+    [
+        "Seleccionar...",
+        "Fortalezas y ventajas",
+        "Desafíos",
+        "Intereses y pasatiempos",
+        "Portafolio",
+        "Disponibilidad",
+        "Referencias"
+    ]
+)
 
-st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+if seccion == "Fortalezas y ventajas":
+    st.markdown("### Fortalezas y Ventajas")
+    st.write("Empática, observadora y versátil, Paula se adapta con facilidad a contextos dinámicos. Su curiosidad constante y dedicación le permiten aportar una mirada fresca y comprometida a los proyectos.")
 
-# Intereses
-st.markdown("## Intereses y Pasatiempos")
-st.write("Apasionada por la fotografía, Paula disfruta documentar escenas cotidianas, explorar rincones urbanos, ver cine independiente y compartir conversaciones largas con café de por medio. También le interesa contar historias visuales en redes sociales.")
+elif seccion == "Desafíos":
+    st.markdown("### Desafíos")
+    st.write("Su nivel de detalle puede ralentizar algunos procesos, pero garantiza resultados cuidados y coherentes con los objetivos del proyecto.")
 
-# Portafolio
-st.markdown("## Portafolio")
-st.write("Actualmente se encuentra desarrollando un portafolio digital que reúna sus trabajos en fotografía, producción de eventos y conceptos creativos. Su objetivo es mostrar su enfoque multidisciplinario y su estilo personal.")
+elif seccion == "Intereses y pasatiempos":
+    st.markdown("### Intereses y Pasatiempos")
+    st.write("Apasionada por la fotografía, Paula disfruta documentar escenas cotidianas, explorar rincones urbanos, ver cine independiente y compartir conversaciones largas con café de por medio. También le interesa contar historias visuales en redes sociales.")
 
-# Disponibilidad
-st.markdown("## Disponibilidad")
-st.write("Abierta a prácticas, proyectos freelance o roles de asistencia en publicidad, eventos y creación de contenido.")
+elif seccion == "Portafolio":
+    st.markdown("### Portafolio")
+    st.write("Actualmente se encuentra desarrollando un portafolio digital que reúna sus trabajos en fotografía, producción de eventos y conceptos creativos. Su objetivo es mostrar su enfoque multidisciplinario y su estilo personal.")
 
-# Referencias
-st.markdown("## Referencias")
-st.write("Disponibles a solicitud.")
+elif seccion == "Disponibilidad":
+    st.markdown("### Disponibilidad")
+    st.write("Abierta a prácticas, proyectos freelance o roles de asistencia en publicidad, eventos y creación de contenido.")
 
-st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
+elif seccion == "Referencias":
+    st.markdown("### Referencias")
+    st.write("Disponibles a solicitud.")
 
 # Footer
+st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown("Creado por Paula Chirinos usando Streamlit.")
 
 

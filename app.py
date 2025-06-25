@@ -76,11 +76,11 @@ st.write("- Exposición de obras en el curso de Artes Visuales del Programa IB")
 st.markdown("## Galería de experiencias")
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.image(endorsements["img1"], use_column_width=True)
+    st.image(endorsements["img1"], use_container_width=True)
 with col2:
-    st.image(endorsements["img2"], use_column_width=True)
+    st.image(endorsements["img2"], use_container_width=True)
 with col3:
-    st.image(endorsements["img3"], use_column_width=True)
+    st.image(endorsements["img3"], use_container_width=True)
 
 # --- Fortalezas ---
 st.markdown("## Fortalezas y Ventajas")

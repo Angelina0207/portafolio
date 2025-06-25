@@ -108,6 +108,6 @@ st.write("Disponibles a solicitud.")
 
 # Footer
 st.markdown("---")
-st.markdown("Creado por Paula Chirinos con ❤️ usando Streamlit.")
+st.markdown("Creado por Paula Chirinos usando Streamlit.")
 
 

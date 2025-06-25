@@ -107,8 +107,8 @@ st.markdown("## 📸 Galería de experiencias")
 
 imagenes = [
     {"url": endorsements["img1"], "caption": "Afiche propio del corto La Silla ante el Banco"},
-    {"url": endorsements["img2"], "caption": "Voluntariado y eventos"},
-    {"url": endorsements["img3"], "caption": "Fotografía urbana"}
+    {"url": endorsements["img2"], "caption": "Trabajo en redes y orientación como Guía PUCP"},
+    {"url": endorsements["img3"], "caption": "Fotografía espontánea"}
 ]
 
 # Inicializar índice en session_state

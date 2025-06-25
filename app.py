@@ -114,7 +114,7 @@ imagenes = [
     {"url": endorsements["img3"], "caption": "FOTOGRAFÍA ESPONTÁNEA DE MATUCANA"},
     {"url": endorsements["img4"], "caption": "FOTOGRAFIANDO PASIONES: EL McLAREN DE AYRTON SENNA"},
     {"url": endorsements["img5"], "caption": "RIELES ESTRECHOS: CRUCE DEL TREN EN MATUCANA"},
-    {"url": endorsements["img6"], "caption": "LA LUNA DESDE BUENOS AIRES"}
+    {"url": endorsements["img6"], "caption": "VIAJAR Y RECORDAR: LA LUNA DESDE BUENOS AIRES"}
 ]
 
 # Inicializar índice en session_state
